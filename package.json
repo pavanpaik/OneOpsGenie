@@ -1,0 +1,39 @@
+{
+  "name": "ops-genie",
+  "version": "0.1.0",
+  "description": "A TypeScript CLI that manages an ops workspace and delegates prompts to Claude",
+  "main": "dist/index.js",
+  "bin": {
+    "ops-genie": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "eslint src/**/*.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "ops",
+    "claude",
+    "ai",
+    "workspace"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "ora": "^8.1.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
